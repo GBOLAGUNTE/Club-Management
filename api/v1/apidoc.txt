@@ -1,0 +1,50 @@
+API DOCUMENTATION
+-----------------
+
+Base URL/Root URL
+------------------
+http://localhost/uefa/api/v1/
+
+
+Endpoints  |  Method
+--------------------
+
+addmember.php | POST
+updatemember.php | PUT
+fetchmember.php | GET
+fetchallmembers.php | GET
+deletememeber.php | DELETE
+
+addmember.php Endpoint
+-----------------------
+URI: http://localhost/uefa/api/v1/addmember.php
+
+Request Payload
+{
+    "lastname": "Bako",
+    "firstname": "Danladi",
+    "dob": "2000-10-20",
+    "phone": "2348080721800",
+    "desc": "Danladi Bako a journalist",
+    "email": "bako@mail.net",
+    "password": "123456"
+}
+
+Response Payload
+{
+    "status": "success",
+    "message" : "Account created successfully",
+    "data": []
+}
+
+Update Request Payload
+{
+    "lastname": "Bond",
+    "firstname": "James Agent-007",
+    "dob": "1990-08-20",
+    "phone": "2348080721555",
+    "desc": "James Bond is a Film maker",
+    "userid": 2
+}
+
+URI: http://api.naijapoetry.com/api/Poetry/GetRecentPoets
